@@ -1,0 +1,45 @@
+.headerUser {
+  padding-left: 30px;
+  position: relative;
+  .userIcon {
+    width: 20px;
+    height: 28px;
+    cursor: pointer;
+    color: black;
+  }
+
+  .userIcon:hover {
+    color: #6ca12b;
+  }
+
+  .userList {
+    padding: 10px 30px;
+
+    background-color: #fff;
+
+    border: 1px solid #f3f3f3;
+    box-shadow: 1px 5px 10px rgb(0 0 0 / 35%);
+    position: absolute;
+    top: 35px;
+    right: 0;
+    z-index: 5;
+
+    .userItem {
+      min-width: 100px;
+      border-bottom: 1px solid #f5f5f5;
+      font-size: 13px;
+      text-transform: capitalize;
+      text-align: left;
+      line-height: 28px;
+      .userLink {
+        text-decoration: none;
+        font-family: "Mulish", sans-serif;
+        color: #666;
+      }
+
+      .userLink:hover {
+        color: #6ca12b;
+      }
+    }
+  }
+}
