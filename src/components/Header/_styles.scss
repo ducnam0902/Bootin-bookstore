@@ -26,7 +26,7 @@
       }
 
       .searchIcon:hover {
-        color: #95d34a;
+        color: $primary-color;
       }
     }
 
@@ -46,7 +46,7 @@
       }
 
       .favourtieIcon:hover {
-        color: #95d34a;
+        color: $primary-color;
       }
 
       .favouriteIcon::before {
@@ -67,12 +67,11 @@
         width: 24px;
         height: 24px;
         line-height: 24px;
-        background: #95d34a;
+        background: $primary-color;
         border-radius: 50%;
         text-align: center;
         font-weight: 500;
-        color: #fff;
-        font-size: 15px;
+        color: $white-color;
       }
     }
   }
@@ -88,11 +87,10 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 30px;
-    color: #2b2b2b;
+    color: $text-color;
     text-transform: uppercase;
-    font-family: "Mulish", sans-serif;
-    border-top: 1px solid #6ca12b;
-    border-bottom: 1px solid #6ca12b;
+    border-top: 1px solid $secondary-color;
+    border-bottom: 1px solid $secondary-color;
     width: 40px;
   }
 

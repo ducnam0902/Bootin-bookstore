@@ -1,5 +1,7 @@
 import Header from "./components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.scss";
+
 const App = () => {
   return (
     <div>

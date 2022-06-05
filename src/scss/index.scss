@@ -1,0 +1,10 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "variables";
+@import "font";
+@import "custom";
+
+@import "../components/Cart/styles.scss";
+@import "../components/CartItem/styles.scss";
+@import "../components/HeaderNavigation/styles";
+@import "../components/Header/styles.scss";
+@import "../components/HeaderUser/styles.scss";

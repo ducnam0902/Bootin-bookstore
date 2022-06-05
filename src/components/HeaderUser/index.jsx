@@ -3,7 +3,6 @@ import { List, Collapse } from "reactstrap";
 
 import { BsPerson } from "react-icons/bs";
 
-import "./styles.scss";
 import { useState } from "react";
 const HeaderUser = () => {
   const [toggleUserList, setToggleUserList] = useState(false);

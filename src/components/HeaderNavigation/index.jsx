@@ -8,8 +8,6 @@ import {
   OffcanvasHeader,
 } from "reactstrap";
 
-import "./styles.scss";
-
 const HeaderNavigation = () => {
   const [isOpenSideNav, setIsOpenSideNav] = useState(false);
 

@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "reactstrap";
-import "./styles.scss";
 import { logo } from "../../assets/image";
 import { Link, NavLink } from "react-router-dom";
 import { BsSearch, BsHeart } from "react-icons/bs";
