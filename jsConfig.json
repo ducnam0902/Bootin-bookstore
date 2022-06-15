@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@bootin/*": ["src/*"],
+      "@icon/*": ["node_modules/eleganticons/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

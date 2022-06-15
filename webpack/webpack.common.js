@@ -4,6 +4,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   resolve: {
+    alias: {
+      "@bootin": path.join(__dirname, "..", "/src"),
+      "@icon": path.resolve(__dirname, "./node_modules", "eleganticons"),
+    },
     extensions: [".jsx", ".js"],
   },
   module: {
