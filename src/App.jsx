@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<a>sa</a>} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
