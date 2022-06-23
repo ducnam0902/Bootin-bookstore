@@ -78,6 +78,10 @@
 }
 
 @media screen and (max-width: 991px) {
+  .headerRow {
+    height: 107px !important;
+  }
+
   .headerList {
     display: none;
   }
