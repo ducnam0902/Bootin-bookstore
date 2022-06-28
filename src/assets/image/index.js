@@ -11,7 +11,12 @@ import discontFree from "./discountfree.png";
 import fastDelivery from "./fastdelivery.png";
 import freeship from "./freeship.png";
 import cartItem2 from "./Image-28.jpg";
-
+import bgBrand from "./bg-brand.png";
+import brand1 from "./brand1.png";
+import brand2 from "./brand2.png";
+import brand3 from "./brand3.png";
+import brand4 from "./brand4.png";
+import brand5 from "./brand5.png";
 export {
   logo,
   cartItem1,
@@ -26,4 +31,10 @@ export {
   fastDelivery,
   freeship,
   cartItem2,
+  bgBrand,
+  brand1,
+  brand2,
+  brand3,
+  brand4,
+  brand5,
 };
