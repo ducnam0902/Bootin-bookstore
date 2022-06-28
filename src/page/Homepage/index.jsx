@@ -1,4 +1,5 @@
 import Policy from "@bootin/components/Policy";
+import PopularBook from "@bootin/components/PopularBook";
 import Slide from "@bootin/components/Slide";
 
 const Homepage = () => {
@@ -6,6 +7,7 @@ const Homepage = () => {
     <div>
       <Slide />
       <Policy />
+      <PopularBook />
     </div>
   );
 };

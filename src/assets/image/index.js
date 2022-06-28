@@ -10,6 +10,7 @@ import slide3 from "./slide3.jpg";
 import discontFree from "./discountfree.png";
 import fastDelivery from "./fastdelivery.png";
 import freeship from "./freeship.png";
+import cartItem2 from "./Image-28.jpg";
 
 export {
   logo,
@@ -24,4 +25,5 @@ export {
   discontFree,
   fastDelivery,
   freeship,
+  cartItem2,
 };
