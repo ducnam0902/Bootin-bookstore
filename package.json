@@ -9,6 +9,16 @@
     "lint": "eslint src/",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    ".js": [
+      "lint"
+    ]
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -29,6 +39,7 @@
     "eslint-plugin-react": "^7.30.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "mini-css-extract-plugin": "^2.6.0",
     "prettier": "^2.6.2",
     "react-icons": "^4.4.0",
