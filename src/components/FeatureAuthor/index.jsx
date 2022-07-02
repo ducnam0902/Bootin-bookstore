@@ -1,80 +1,47 @@
-import { brand1 } from "@bootin/assets/image";
-import { Link } from "react-router-dom";
-import { Col, Container } from "reactstrap";
+import { brand1, brand2, brand3, brand4 } from "@bootin/assets/image";
+import { Col, Container, Row } from "reactstrap";
+import FeatureAuthorItem from "../FeatureAuthorItem";
 const FeatureAuthor = () => {
+  const data = [
+    {
+      image: brand1,
+      topRated: 6,
+      authorName: "Anna Hillton",
+      publishedBook: 3,
+    },
+    {
+      image: brand2,
+      topRated: 2,
+      authorName: "Susan Merrlin",
+      publishedBook: 4,
+    },
+    {
+      image: brand3,
+      topRated: 12,
+      authorName: "Coco Simon",
+      publishedBook: 2,
+    },
+    {
+      image: brand4,
+      topRated: 5,
+      authorName: "Sabela Hupter",
+      publishedBook: 7,
+    },
+  ];
   return (
-    <div className="featureAuthorContainer">
+    <Container className="featureAuthorContainer">
       <h4 className="featureAuthorText">Featured Author</h4>
-      <Container fluid="true" className="featureAuthorList">
-        <Col lg={3} md={6} sm={12} className="featureAuthorItem">
-          <div className="imageSection">
-            <Link to="/" className="featureAuthorImage">
-              <img src={brand1} alt="Anna Hillton" className="authorImage" />
-              <div className="featureAuthorBranch"></div>
-              <p className="featureAuthorTopRate">#6</p>
-            </Link>
-          </div>
-
-          <div className="featureAuthorTitle">
-            <Link to="/" className="authorName">
-              Anna Hillton
-            </Link>
-            <p className="publishedBook">3 Published Book</p>
-          </div>
-        </Col>
-
-        <Col lg={3} md={6} sm={12} className="featureAuthorItem">
-          <div className="imageSection">
-            <Link to="/" className="featureAuthorImage">
-              <img src={brand1} alt="Anna Hillton" className="authorImage" />
-              <div className="featureAuthorBranch"></div>
-              <p className="featureAuthorTopRate">#6</p>
-            </Link>
-          </div>
-
-          <div className="featureAuthorTitle">
-            <Link to="/" className="authorName">
-              Anna Hillton
-            </Link>
-            <p className="publishedBook">3 Published Book</p>
-          </div>
-        </Col>
-
-        <Col lg={3} md={6} sm={12} className="featureAuthorItem">
-          <div className="imageSection">
-            <Link to="/" className="featureAuthorImage">
-              <img src={brand1} alt="Anna Hillton" className="authorImage" />
-              <div className="featureAuthorBranch"></div>
-              <p className="featureAuthorTopRate">#6</p>
-            </Link>
-          </div>
-
-          <div className="featureAuthorTitle">
-            <Link to="/" className="authorName">
-              Anna Hillton
-            </Link>
-            <p className="publishedBook">3 Published Book</p>
-          </div>
-        </Col>
-
-        <Col lg={3} md={6} sm={12} className="featureAuthorItem">
-          <div className="imageSection">
-            <Link to="/" className="featureAuthorImage">
-              <img src={brand1} alt="Anna Hillton" className="authorImage" />
-              <div className="featureAuthorBranch"></div>
-              <p className="featureAuthorTopRate">#6</p>
-            </Link>
-          </div>
-
-          <div className="featureAuthorTitle">
-            <Link to="/" className="authorName">
-              Anna Hillton
-            </Link>
-            <p className="publishedBook">3 Published Book</p>
-          </div>
-        </Col>
-      </Container>
-    </div>
+      <div className="featureAuthorList">
+        <Row>
+          {data.map((item, index) => (
+            <Col key={index} lg={3} md={6} sm={12}>
+              <FeatureAuthorItem {...item} />
+            </Col>
+          ))}
+        </Row>
+      </div>
+      <div className="featureAuthorLine"></div>
+    </Container>
   );
 };
 
