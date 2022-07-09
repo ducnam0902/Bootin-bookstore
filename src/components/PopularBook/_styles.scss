@@ -142,6 +142,10 @@
         cursor: pointer;
       }
 
+      .bookFavouriteHighlight {
+        color: orange;
+      }
+
       .bookPrice {
         line-height: 100%;
         font-family: $font-merriweather;
