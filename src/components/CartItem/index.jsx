@@ -36,7 +36,7 @@ Cartitem.propTypes = {
   image: PropTypes.string,
   price: PropTypes.number,
   onDelete: PropTypes.func,
-  id: PropTypes.string,
+  id: PropTypes.number,
 };
 
 export default Cartitem;
