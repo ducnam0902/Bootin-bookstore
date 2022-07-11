@@ -36,6 +36,7 @@
     border: 1px solid #f3f3f3;
     box-shadow: 0 5px 5px 0 rgb(50 50 50 / 20%);
     z-index: 4;
+    background-color: $white-color;
   }
 
   .noProduct {
@@ -164,4 +165,5 @@
   padding-bottom: 10px;
   max-height: 335px;
   overflow-y: auto;
+  background: #fff;
 }

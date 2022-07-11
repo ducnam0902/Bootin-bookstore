@@ -1,0 +1,68 @@
+.featureAuthorItem {
+  margin-bottom: 30px;
+  .imageSection {
+    height: 170px;
+    .featureAuthorImage {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      align-items: center;
+
+      .authorImage {
+        width: 130px;
+        height: 130px;
+      }
+
+      .featureAuthorBranch {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("assets/image/bg-brand.png");
+        width: 100%;
+        height: 170px;
+        background-repeat: no-repeat;
+        background-position: 50% -12%;
+      }
+
+      .featureAuthorTopRate {
+        width: 35px;
+        height: 22px;
+        color: #2b2b2b;
+        font-size: 14px;
+        line-height: 22px;
+        background: #f9d21c;
+        border-radius: 4px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .featureAuthorTitle {
+    text-align: center;
+
+    .authorName {
+      display: block;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-family: $font-merriweather;
+      color: #2b2b2b;
+      line-height: 1.6;
+    }
+
+    .authorName:hover {
+      color: $primary-color;
+    }
+
+    .publishedBook {
+      color: #666;
+    }
+  }
+}

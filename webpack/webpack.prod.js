@@ -24,9 +24,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin(),
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: [
-        path.join(process.cwd(), "..", "build/**/*"),
-      ],
+      cleanOnceBeforeBuildPatterns: [path.join(process.cwd(), "..", "build/**/*")],
     }),
   ],
   optimization: {
