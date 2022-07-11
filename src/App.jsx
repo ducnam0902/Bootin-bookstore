@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
 import Footer from "./components/Footer";
 import Homepage from "./page/Homepage";
@@ -11,7 +11,7 @@ import Contact from "./page/Contact";
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Homepage />} />
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
