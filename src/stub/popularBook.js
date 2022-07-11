@@ -9,7 +9,7 @@ import {
 
 export const popularBook = [
   {
-    image: popularBook1,
+    image: popularBook5,
     bookTitle: "Castle In The Sky",
     author: "Susan Merrlin",
     price: "70.00",
@@ -23,7 +23,7 @@ export const popularBook = [
     favouriteStar: 4,
   },
   {
-    image: popularBook3,
+    image: popularBook1,
     bookTitle: "Cup Cake Diraes",
     author: "Anna Hillton",
     price: "20.5",
@@ -37,7 +37,7 @@ export const popularBook = [
     favouriteStar: 5,
   },
   {
-    image: popularBook5,
+    image: popularBook3,
     bookTitle: "A Thousand Seed",
     author: "Sabela Hupter",
     price: "20.30",
