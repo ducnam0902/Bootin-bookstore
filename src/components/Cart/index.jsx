@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BsBag } from "react-icons/bs";
 import { Button, ButtonGroup, Collapse } from "reactstrap";
 import CartItem from "../CartItem";
-import { cartItem1 } from "../../assets/image";
+import { popularBook1 } from "../../assets/image";
 
 const Cart = () => {
   const [toggleCart, setToggleCart] = useState(false);
@@ -12,21 +12,21 @@ const Cart = () => {
       bookTitle: "Cup Cake Diraes",
       quantity: 1,
       price: 20.5,
-      image: cartItem1,
+      image: popularBook1,
     },
     {
       id: 2,
       bookTitle: "Cup Cake Diraes",
       quantity: 1,
       price: 20.5,
-      image: cartItem1,
+      image: popularBook1,
     },
     {
       id: 3,
       bookTitle: "Cup Cake Diraes",
       quantity: 1,
       price: 20.5,
-      image: cartItem1,
+      image: popularBook1,
     },
   ]);
 

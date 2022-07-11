@@ -7,7 +7,7 @@ import {
 function* getPopularBook() {
   try {
     const result = yield call(fetchPopularBook);
-    yield put(updatePopularBookList(result.data));
+    yield put(updatePopularBookList(result));
   } catch (e) {
     console.log(e);
   }

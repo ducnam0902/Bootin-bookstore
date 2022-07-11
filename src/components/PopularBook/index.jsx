@@ -42,7 +42,7 @@ const PopularBook = () => {
       <h4 className="popularBookTitle">Popular Book</h4>
       <Row>
         <CardGroup className="popularBookList">
-          {popularBookList.map((item, index) => {
+          {popularBookList?.map((item, index) => {
             const favouriteList = getFavouriteStar(item.favouriteStar);
             return (
               <Col xl={4} lg={6} sm={12} key={index}>
