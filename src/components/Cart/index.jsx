@@ -2,40 +2,21 @@ import { useState } from "react";
 import { BsBag } from "react-icons/bs";
 import { Button, ButtonGroup, Collapse } from "reactstrap";
 import CartItem from "../CartItem";
-import { popularBook1 } from "../../assets/image";
+import { useDispatch, useSelector } from "react-redux";
+import { deleteItemInCart } from "@bootin/store/cart-slide";
 
 const Cart = () => {
   const [toggleCart, setToggleCart] = useState(false);
-  const [cartItem] = useState([
-    {
-      id: 1,
-      bookTitle: "Cup Cake Diraes",
-      quantity: 1,
-      price: 20.5,
-      image: popularBook1,
-    },
-    {
-      id: 2,
-      bookTitle: "Cup Cake Diraes",
-      quantity: 1,
-      price: 20.5,
-      image: popularBook1,
-    },
-    {
-      id: 3,
-      bookTitle: "Cup Cake Diraes",
-      quantity: 1,
-      price: 20.5,
-      image: popularBook1,
-    },
-  ]);
+  const cartItem = useSelector((state) => state.cart.cartSelected);
+  const totalPrice = useSelector((state) => state.cart.totalPrice);
 
+  const dispatch = useDispatch();
   const handleToggleCart = () => {
     setToggleCart((toggleCart) => !toggleCart);
   };
 
   const handleDeleteItem = (id) => {
-    alert(id);
+    dispatch(deleteItemInCart(id));
   };
   return (
     <div className="headerCart">
@@ -63,7 +44,7 @@ const Cart = () => {
               <div className="totalSection">
                 <p className="totalText">Total: </p>
                 <span className="lineSection"></span>
-                <p className="totalPrice">$20.5</p>
+                <p className="totalPrice">${totalPrice}</p>
               </div>
               <ButtonGroup className="buttonGroupCart">
                 <Button className="viewCartbutton">View cart</Button>

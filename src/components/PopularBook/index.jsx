@@ -19,6 +19,7 @@ import { useDispatch, useSelector } from "react-redux";
 import cn from "classnames";
 
 import { getPopularBookList } from "@bootin/store/popularBook-slide";
+import { addToCart } from "@bootin/store/cart-slide";
 const PopularBook = () => {
   const popularBookList = useSelector((state) => state.popularBook.popularBookList);
   const dispatch = useDispatch();
@@ -37,6 +38,11 @@ const PopularBook = () => {
     }
     return favouriteStarList;
   };
+
+  const handleAddToCart = (item) => {
+    dispatch(addToCart(item));
+  };
+
   return (
     <Container fluid className="popularBookSection">
       <h4 className="popularBookTitle">Popular Book</h4>
@@ -85,7 +91,12 @@ const PopularBook = () => {
                       ))}
                     </CardText>
                     <CardText className="bookPrice">${item.price}</CardText>
-                    <Button className="addToCart">Add To Cart</Button>
+                    <Button
+                      className="addToCart"
+                      onClick={() => handleAddToCart(item)}
+                    >
+                      Add To Cart
+                    </Button>
                   </CardBody>
                 </Card>
               </Col>
